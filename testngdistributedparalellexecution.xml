@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count = "3" parallel = "tests">
+   <test name="chromeTest-1">
+  		<classes>
+      		<class name="com.crm.SDET25.opportunities.pom.AdvanceSearchDoesNotContainsTest"/>
+      		<class name="com.crm.SDET25.opportunities.pom.AdvanceSearchContainsTest"/>
+    	</classes>
+   </test>
+   <test name="chromeTest-2">
+      	<classes>
+      		<class name="com.crm.SDET25.opportunities.pom.AdvanceSearchEndsWithTest"/>
+      		<class name="com.crm.SDET25.opportunities.pom.AdvanceSearchNoneTest"/>
+        </classes>
+    </test>
+    <test name="chromeTest-3">
+      <classes>
+      		<class name="com.crm.SDET25.opportunities.pom.AdvanceSearchNotEqualToTest"/>
+      		<class name="com.crm.SDET25.opportunities.pom.AdvanceSearchStartsWith"/>
+    	</classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
